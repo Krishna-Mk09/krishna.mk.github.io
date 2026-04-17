@@ -202,4 +202,88 @@ document.getElementById("contactForm").addEventListener("submit", async function
 
 // Place file in public folder: public/documents/resume.pdf
 
+// Architecture Image Popup Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const popupOverlay = document.getElementById('image-popup');
+    if (!popupOverlay) return;
 
+    const popupImg = document.getElementById('popup-img');
+    const closeBtn = document.querySelector('.close-popup');
+    const prevBtn = document.querySelector('.popup-prev');
+    const nextBtn = document.querySelector('.popup-next');
+    const archButtons = document.querySelectorAll('.architecture-btn');
+
+    let currentImages = [];
+    let currentIndex = 0;
+
+    function openPopup(images, index) {
+        currentImages = images;
+        currentIndex = index;
+        updateImage();
+        popupOverlay.style.display = 'flex';
+        // Hide arrows if only 1 image
+        if (currentImages.length <= 1) {
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'none';
+        } else {
+            prevBtn.style.display = 'block';
+            nextBtn.style.display = 'block';
+        }
+    }
+
+    function closePopup() {
+        popupOverlay.style.display = 'none';
+    }
+
+    function updateImage() {
+        if (currentImages.length > 0) {
+            popupImg.src = currentImages[currentIndex];
+        }
+    }
+
+    // Architecture buttons click
+    archButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            let imagesStr = btn.getAttribute('data-images');
+            if (imagesStr) {
+                try {
+                    let images = JSON.parse(imagesStr);
+                    if (images && images.length > 0) {
+                        openPopup(images, 0);
+                    }
+                } catch(err) {
+                    console.error("Invalid images JSON");
+                }
+            }
+        });
+    });
+
+    // Close on X
+    closeBtn.addEventListener('click', closePopup);
+
+    // Close on outside click
+    popupOverlay.addEventListener('click', (e) => {
+        if (e.target === popupOverlay || e.target.classList.contains('popup-image-container')) {
+            closePopup();
+        }
+    });
+
+    // Previous button
+    prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+        updateImage();
+    });
+
+    // Next button
+    nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % currentImages.length;
+        updateImage();
+    });
+
+    // Click image to open in new tab
+    popupImg.addEventListener('click', () => {
+        if (popupImg.src) {
+            window.open(popupImg.src, '_blank');
+        }
+    });
+});

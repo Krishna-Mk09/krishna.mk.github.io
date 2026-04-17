@@ -103,7 +103,7 @@
             <div class="skill-card">
                 <i class="fab fa-node-js skill-icon"></i>
                 <h4>Backend</h4>
-                <p>Java, Spring Boot, Spring Shell, Spring Quartz, Spring Cloud Eureka, Microservices, API Gateways, Apache Kafka, CDC(Debezium), Rabbit MQ, Apache Spark, Docker, Redis, Payment Gateways(RazorPay)</p>
+                <p>Java, Spring Boot, Spring Shell, Spring Security, Spring Cloud Eureka, Microservices, API Gateways, Apache Kafka, CDC(Debezium), Rabbit MQ, Apache Spark, Docker, Redis, Payment Gateways(RazorPay)</p>
             </div>
             <div class="skill-card">
                 <i class="fas fa-database skill-icon"></i>
@@ -113,7 +113,7 @@
             <div class="skill-card">
                 <i class="fas fa-tools skill-icon"></i>
                 <h4>Tools </h4>
-                <p> Git, GitHub, Docker Containerization, Jenkins(CI/CD), Linux, Intellij, Render, AWS(EC2,VPC), Jmeter. </p>
+                <p> Git, GitHub, VCS, Docker Containerization, Jenkins(CI/CD), Linux, Intellij, Render, AWS(EC2,VPC), Jmeter. </p>
             </div>
         </div>
     </section>
@@ -139,6 +139,7 @@
                     <div class="project-links">
                         <a href="#">Go Live </a>
                         <a href="https://github.com/Krishna-Mk09/FoodApplicationProject">Source Code</a>
+                        <a href="javascript:void(0)" class="architecture-btn" data-images='["./images/ZomaatoArchitecture.png", "./images/cdc.png","./images/classDiagramKanban.png"]'>Architecture</a>
                     </div>
                 </div>
                 <p class="deploy-text"> Instance Down.</p>
@@ -159,6 +160,7 @@
                     <div class="project-links">
                         <a href="http://3.221.190.43:4200/">Live Demo</a>
                         <a href="https://github.com/Krishna-Mk09/My_Work_Planer-Kanban_Board_99">Source Code</a>
+                        <a href="javascript:void(0)" class="architecture-btn" data-images='["./images/DeploymentArchitecture.png", "./images/kanban-final.png","./images/classDiagramKanban.png"]'>Architecture</a>
                     </div>
                 </div>
                 <p class="deploy-text">Deployed in AWS</p>
@@ -179,6 +181,7 @@
                     <div class="project-links">
                         <a href="https://krishna-mk09.github.io/pokemon_Project-master/">Live Demo</a>
                         <a href="https://github.com/Krishna-Mk09/pokemon_Project-master">Source Code</a>
+                        <a href="javascript:void(0)" class="architecture-btn" data-images='["./images/pokeman.png", "./images/pro1.png"]'>Architecture</a>
                     </div>
                 </div>
                 <p class="deploy-text">Deployed in GitHub</p>
@@ -381,6 +384,18 @@
     <footer>
         <p>&copy; 2025 Vamshi Krishna Mugala. All rights reserved.</p>
     </footer>
+
+    <!-- Image Popup Modal -->
+    <div id="image-popup" class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <button class="popup-prev">&lt;</button>
+            <div class="popup-image-container">
+                <img id="popup-img" src="" alt="Architecture Image">
+            </div>
+            <button class="popup-next">&gt;</button>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
