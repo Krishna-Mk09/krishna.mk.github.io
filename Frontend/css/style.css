@@ -117,7 +117,7 @@ section {
 
 /* Hero Section */
 #home {
-    height: 100vh;
+    height: 108vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -258,7 +258,7 @@ section {
 
 .about-text {
     flex: 1;
-    min-width: 300px;
+    min-width: 250px;
 }
 
 .about-text h3 {
@@ -781,7 +781,7 @@ section {
 .role-header h4 {
     margin: 0;
     font-weight: 500;
-    color: #fffa`;
+    color: #fffa;
 }
 
 

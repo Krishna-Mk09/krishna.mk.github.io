@@ -13,391 +13,451 @@
 
 <body>
 
-    <!-- Header -->
-    <header>
-        <nav>
-            <a href="#home" class="logo">MK</a>
+<!-- Header -->
+<header>
+    <nav>
+        <a href="#home" class="logo">MK.</a>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="images/VamshiKrishnaMugala.pdf" download="VamshiKrishnaMugala.pdf" class="btn-resume">
+            Download Resume
+        </a>
+
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home">
+    <div id="canvas-container"></div>
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Hi, I'm <span class="typing-text"></span><span class="cursor">|</span><br> Software Development
+                Engineer.
+            </h1>
+            <p>I build highly scalable web applications using modern technologies. I am passionate about creating
+                innovative and user-friendly solutions.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">View Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="./images/pro1.png" alt="Profile">
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-container">
+        <div class="about-text" style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <p>
+                I am a Full Stack Developer specializing in building scalable , high-performance applications, with
+                strong expertise in data structures, modern frontend technologies, robust backend systems, and
+                deployment architecture. I also have a solid foundation in system design, enabling me to develop
+                efficient, end-to-end solutions.
+            </p>
+
+            <div class="about-stats" style="justify-content: center;">
+                <div class="stat-item">
+                    <i class="fas fa-code stat-icon"></i>
+                    <h4 class="counter" data-target="140">0</h4>
+                    <a href="https://leetcode.com/u/mk09vamshi/">LeetCode</a>
+                </div>
+                <div class="stat-item">
+                    <i class="fab fa-hackerrank stat-icon"></i>
+                    <h4 class="counter" data-target="347">0</h4>
+                    <a>Scaler</a>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-star stat-icon"></i>
+                    <h4 class="counter" data-target="28">0</h4>
+                    <a href="https://github.com/Krishna-Mk09"> GitHub Stars</a>
+                </div>
+            </div>
+
+            <div class="hero-btns" style="justify-content: center;">
+                <a href="#contact" class="btn btn-primary">Let's Talk</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-container">
+        <div class="skill-card">
+            <i class="fab fa-html5 skill-icon"></i>
+            <h4>Frontend</h4>
+            <ul style="margin:0; padding-right:20px; color:#95acc2;font-size:14px;">
+                <li style="margin:0; padding-left:0px;">• JavaScript</li>
+                <li style="margin:0; padding-right: 20px;"> • Angular</li>
+                <li style="margin:0; padding-right: 30px;"> • HTML5</li>
+                <li style="margin:0;padding-right: 40px;"> • CSS3</li>
             </ul>
-            <a href="images/VamshiKrishnaMugala.pdf" download="VamshiKrishnaMugala.pdf" class="btn-resume">
-                Download Resume
-            </a>
+        </div>
+        <div class="skill-card">
+            <i class="fab fa-node-js skill-icon"></i>
+            <h4>Backend</h4>
+<!--            <p>-->
+<!--                • Java • Data Structures & Algorithms • Spring Boot • Microservices • Spring Security • Eureka • API-->
+<!--                Gateway • Apache Kafka • Debezium (CDC) • RabbitMQ • Apache Spark • Docker • Razorpay Integration-->
+<!--            </p>-->
 
-        </nav>
-    </header>
+            <ul style="margin:0; padding-left:18px; color:#95acc2;font-size:14px;">
+                <li style="margin:0; padding-right:35px;">• Java • Spring Boot</li>
+                <li style="margin:0;padding-right: 6px;"> • Microservices  • Docker</li>
+                <li style="margin:0; padding-right: 5px;">• Data Structures & Algo</li>
+                <li style="margin:0;padding-right: 0px;"> • Spring Security • Eureka</li>
+                <li style="margin:0;padding-right: 0px;"> • API Gateway •RabbitMQ</li>
+                <li style="margin:0;padding-right: 15px;"> • Apache Kafka • Spark </li>
+                <li style="margin:0;padding-right: 48px;"> • Debezium (CDC)</li>
+                <li style="margin:0;padding-right: 0px;"> </li>
+                <li style="margin:0;padding-right: 20px;"> • Razorpay Integration</li>
+            </ul>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-database skill-icon"></i>
+            <h4>Database</h4>
+            <ul style="margin:0; padding-right:10px; color:#95acc2;font-size:14px;">
+                <li style="margin:0; padding-left:19px;">• Postgres SQL</li>
+                <li style="margin:0; padding-right: 25px;"> •  Oracle</li>
+                <li style="margin:0; padding-right: 0px;"> • SQL Server</li>
+                <li style="margin:0;padding-right: 28px;"> • MySQL</li>
+                <li style="margin:0;padding-right: 8px;"> • MongoDB</li>
+                <li style="margin:0;padding-right:36px;"> • Redis</li>
+            </ul>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-tools skill-icon"></i>
+            <h4>Tools </h4>
+            <ul style="margin:0; padding-right:10px; color:#95acc2;font-size:14px;">
+                <li style="margin:0; padding-right: 0px;"> • Version Control </li>
+                <li style="margin:0; padding-right:30px;">• Git  • GitHub </li>
+                <li style="margin:0;padding-right: 0px;"> • Docker • Render</li>
+                <li style="margin:0;padding-right: 5px;"> • Jenkins(CI/CD)</li>
+                <li style="margin:0;padding-right:10px;"> • AWS(EC2,VPC)</li>
+                <li style="margin:0;padding-right:10px;"> • Jmeter • Intellij</li>
+                <li style="margin:0;padding-right:77px;"> • Linux</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-    <!-- Hero Section -->
-    <section id="home">
-        <div id="canvas-container"></div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Hi, I'm <span class="typing-text"></span><span class="cursor">|</span><br> Software Development Engineer.
-                </h1>
-                <p>I build scalable web applications using modern technologies. I am passionate about creating
-                    innovative and user-friendly solutions.</p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn btn-primary">View Work</a>
-                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+<!-- Projects Section -->
+<section id="projects">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <div class="project-img">
+                <img src="./images/zomaato.jpg" alt="Project 1">
+            </div>
+            <div class="project-info">
+                <h4>Zomaato Food Application </h4>
+                <p>A full-featured online food delivery application with cart, checkout, dashboard, gateways and
+                    delivery system </p>
+                <div class="project-tags">
+                    <span>Angular</span>
+                    <span>Spring Boot </span>
+                    <span>MySQL</span>
+                </div>
+                <div class="project-links">
+                    <a href="#">Go Live </a>
+                    <a href="https://github.com/Krishna-Mk09/FoodApplicationProject">Source Code</a>
+                    <a href="javascript:void(0)" class="architecture-btn"
+                       data-images='["./images/ZomaatoArchitecture.png", "./images/cdc.png","./images/"]'>Architecture</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="./images/pro1.png" alt="Profile">
-            </div>
+            <p class="deploy-text"> Instance Down.</p>
         </div>
-    </section>
+        <!-- Project 2 -->
+        <div class="project-card">
+            <div class="project-img">
+                <img src="./images/kanban.png" alt="Project 2">
+            </div>
+            <div class="project-info">
+                <h4>Kanban Board</h4>
+                <p>Visualizes tasks across workflow stages for better tracking that improves workflow and
+                    productivity </p>
+                <div class="project-tags">
+                    <span>Angular</span>
+                    <span>Java Spring boot</span>
+                    <span>MySQL</span>
+                </div>
+                <div class="project-links">
+                    <a href="http://3.221.190.43:4200/">Live Demo</a>
+                    <a href="https://github.com/Krishna-Mk09/My_Work_Planer-Kanban_Board_99">Source Code</a>
+                    <a href="javascript:void(0)" class="architecture-btn"
+                       data-images='["./images/DeploymentArchitecture.png", "./images/kanban-final.png","./images/classDiagramKanban.png"]'>Architecture</a>
+                </div>
+            </div>
+            <p class="deploy-text">Deployed in AWS</p>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card">
+            <div class="project-img">
+                <img src="./images/pokeman.png" alt="Project 3">
+            </div>
+            <div class="project-info">
+                <h4>PokeMan Characteristics</h4>
+                <p>View core Pokémon characteristics including type ,stats, type, abilities and battle stats.</p>
+                <div class="project-tags">
+                    <span>HTML & CSS</span>
+                    <span>JavaScript</span>
+                    <span>Java</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://krishna-mk09.github.io/pokemon_Project-master/">Live Demo</a>
+                    <a href="https://github.com/Krishna-Mk09/pokemon_Project-master">Source Code</a>
+                    <a href="javascript:void(0)" class="architecture-btn"
+                       data-images='["./images/pokeman.png", "./images/pro1.png"]'>Architecture</a>
+                </div>
+            </div>
+            <p class="deploy-text">Deployed in GitHub</p>
+        </div>
+    </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-container">
-            <div class="about-text" style="text-align: center; max-width: 800px; margin: 0 auto;">
+<!-- Experience Section -->
+<section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024 - Present</div>
+            <div class="timeline-content">
+                <div class="role-header">
+                    <h3>Software Engineer</h3>
+                    <h4>Solix Software Tech.</h4>
+                </div>
+                <br>
                 <p>
-                    I am a passionate Full Stack Developer with a strong foundation in modern web technologies.
-                    I love solving complex problems and creating intuitive, user-friendly applications.
-                    With experience in both front-end and back-end development.
+                    Developed and enhanced core Java backend services with a focus on multithreading, performance
+                    optimization, and scalable design.
+                    Resolved code quality and security issues, applied SOLID principles and design patterns,
+                    redesigned
+                    critical application screens,
+                    and collaborated closely with cross-functional teams to deliver reliable and high-performance
+                    systems.
                 </p>
-
-
-                <!-- Stats moved here -->
-                <div class="about-stats" style="justify-content: center;">
-                    <div class="stat-item">
-                        <i class="fas fa-code stat-icon"></i>
-                        <h4 class="counter" data-target="10">0</h4>
-                        <p>GitHub Stars</p>
-                    </div>
-                    <div class="stat-item">
-                        <i class="fab fa-hackerrank stat-icon"></i>
-                        <h4 class="counter" data-target="347">0</h4>
-                        <p>SCALER</p>
-                    </div>
-                    <div class="stat-item">
-                        <i class="fas fa-star stat-icon"></i>
-                        <h4 class="counter" data-target="124">0</h4>
-                        <p>Scaler Streak</p>
-                    </div>
-                </div>
-
-                <div class="hero-btns" style="justify-content: center;">
-                    <a href="#contact" class="btn btn-primary">Let's Talk</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2 class="section-title">My Skills</h2>
-        <div class="skills-container">
-            <div class="skill-card">
-                <i class="fab fa-html5 skill-icon"></i>
-                <h4>Frontend</h4>
-                <p>JavaScript, Angular, HTML, CSS.</p>
-            </div>
-            <div class="skill-card">
-                <i class="fab fa-node-js skill-icon"></i>
-                <h4>Backend</h4>
-                <p>Java, Spring Boot, Spring Shell, Spring Security, Spring Cloud Eureka, Microservices, API Gateways, Apache Kafka, CDC(Debezium), Rabbit MQ, Apache Spark, Docker, Redis, Payment Gateways(RazorPay)</p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-database skill-icon"></i>
-                <h4>Database</h4>
-                <p>Postgres SQL, MySQL, MongoDB, Oracle, SQL Server. </p>
-            </div>
-            <div class="skill-card">
-                <i class="fas fa-tools skill-icon"></i>
-                <h4>Tools </h4>
-                <p> Git, GitHub, VCS, Docker Containerization, Jenkins(CI/CD), Linux, Intellij, Render, AWS(EC2,VPC), Jmeter. </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="./images/zomaato.jpg" alt="Project 1">
-                </div>
-                <div class="project-info">
-                    <h4>Zomaato Food Application </h4>
-                    <p>A full-featured online food delivery application with cart, checkout, dashboard, gateways and
-                        delivery system </p>
-                    <div class="project-tags">
-                        <span>Angular</span>
-                        <span>Spring Boot </span>
-                        <span>MySQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#">Go Live </a>
-                        <a href="https://github.com/Krishna-Mk09/FoodApplicationProject">Source Code</a>
-                        <a href="javascript:void(0)" class="architecture-btn" data-images='["./images/ZomaatoArchitecture.png", "./images/cdc.png","./images/"]'>Architecture</a>
-                    </div>
-                </div>
-                <p class="deploy-text"> Instance Down.</p>
-            </div>
-            <!-- Project 2 -->
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="./images/kanban.png" alt="Project 2">
-                </div>
-                <div class="project-info">
-                    <h4>Kanban Board</h4>
-                    <p>Visualizes tasks across workflow stages for better tracking that improves workflow and productivity </p>
-                    <div class="project-tags">
-                        <span>Angular</span>
-                        <span>Java Spring boot</span>
-                        <span>MySQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="http://3.221.190.43:4200/">Live Demo</a>
-                        <a href="https://github.com/Krishna-Mk09/My_Work_Planer-Kanban_Board_99">Source Code</a>
-                        <a href="javascript:void(0)" class="architecture-btn" data-images='["./images/DeploymentArchitecture.png", "./images/kanban-final.png","./images/classDiagramKanban.png"]'>Architecture</a>
-                    </div>
-                </div>
-                <p class="deploy-text">Deployed in AWS</p>
-            </div>
-            <!-- Project 3 -->
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="./images/pokeman.png" alt="Project 3">
-                </div>
-                <div class="project-info">
-                    <h4>PokeMan Characteristics</h4>
-                    <p>View core Pokémon characteristics including type ,stats, type, abilities and battle stats.</p>
-                    <div class="project-tags">
-                        <span>HTML & CSS</span>
-                        <span>JavaScript</span>
-                        <span>Java</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://krishna-mk09.github.io/pokemon_Project-master/">Live Demo</a>
-                        <a href="https://github.com/Krishna-Mk09/pokemon_Project-master">Source Code</a>
-                        <a href="javascript:void(0)" class="architecture-btn" data-images='["./images/pokeman.png", "./images/pro1.png"]'>Architecture</a>
-                    </div>
-                </div>
-                <p class="deploy-text">Deployed in GitHub</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2024 - Present</div>
-                <div class="timeline-content">
-                    <div class="role-header">
-                        <h3>Software Engineer</h3>
-                        <h4>Solix Software Tech.</h4>
-                    </div>
-                    <br>
-                    <p>
-                        Developed and enhanced core Java backend services with a focus on multithreading, performance
-                        optimization, and scalable design.
-                        Resolved code quality and security issues, applied SOLID principles and design patterns,
-                        redesigned
-                        critical application screens,
-                        and collaborated closely with cross-functional teams to deliver reliable and high-performance
-                        systems.
-                    </p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2023 - 2024</div>
-                <div class="timeline-content">
-                    <div class="role-header">
-                        <h3>Junior Software Engineer</h3>
-                        <h4>Solix Software Tech.</h4>
-                    </div>
-                    <br>
-                    <p>
-                        Contributed to application development by implementing feature enhancements, fixing bugs,
-                        resolving
-                        SonarQube issues,
-                        writing unit tests, and maintaining technical documentation.
-                        Worked closely with development, QA, and product teams to support MVP delivery and ensure code
-                        quality and stability.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <h2 class="section-title">Education</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2025 - 2026</div>
-                <div class="timeline-content">
-                    <h3>Software Engineering</h3>
-                    <h4>SCALAR </h4>
-                    <p>Graduated with Honors in Software Engineering, specializing in Web Technologies, with hands-on
-                        expertise in DSA, SQL, LLD, HLD, and scalable System Design.</p>
-                </div>
             </div>
         </div>
 
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2022 - 2023</div>
-                <div class="timeline-content">
-                    <h3>PGP Full Stack Software Engineering</h3>
-                    <h4>University of National Institute of Information Technology - NIIT</h4>
-                    <p>Graduated with Honors. Specialized in Software Engineering and Web Technologies.</p>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023 - 2024</div>
+            <div class="timeline-content">
+                <div class="role-header">
+                    <h3>Junior Software Engineer</h3>
+                    <h4>Solix Software Tech.</h4>
                 </div>
+                <br>
+                <p>
+                    Contributed to application development by implementing feature enhancements, fixing bugs,
+                    resolving
+                    SonarQube issues,
+                    writing unit tests, and maintaining technical documentation.
+                    Worked closely with development, QA, and product teams to support MVP delivery and ensure code
+                    quality and stability.
+                </p>
             </div>
         </div>
 
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2016 - 2020</div>
-                <div class="timeline-content">
-                    <h3>Bachelor of Technology </h3>
-                    <h4>Jyothismathi institute of Technology & Science - JNTUH</h4>
-                    <p>Specialized in Electrical and Electronics Engineering.</p>
-                </div>
-            </div>
-        </div>
+        <!--            Experience-->
+        <!--            <div class="timeline-item">-->
+        <!--                <div class="timeline-dot"></div>-->
+        <!--                <div class="timeline-date"> May 2022 - Nov 2023</div>-->
+        <!--                <div class="timeline-content">-->
+        <!--                    <div class="role-header">-->
+        <!--                        <h3>Java Developer </h3>-->
+        <!--                        <h4>CoreFront Technologies.</h4>-->
+        <!--                    </div>-->
+        <!--                    <br>-->
+        <!--                    <p>-->
+        <!--                        Enhanced Java and Spring Boot backend services to process customer data, built REST APIs for-->
+        <!--                        reporting dashboards, implemented validations, generated periodic business reports, enabled tracking-->
+        <!--                        of customer lifecycle and conversion metrics, and maintained clear documentation for APIs and system-->
+        <!--                        processes.-->
+        <!--                    </p>-->
+        <!--                </div>-->
 
-    </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2 class="section-title">My Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <i class="fas fa-code service-icon"></i>
-                <h3>Web Development</h3>
-                <p>Building fast, responsive, scalable and secure web applications using modern technologies.</p>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-paint-brush service-icon"></i>
-                <h3>UI/UX Design</h3>
-                <p>Designing intuitive and visually appealing user interfaces.</p>
-            </div>
-        </div>
-    </section>
+    </div>
+    </div>
+</section>
 
-    <!-- Certifications Section -->
-    <section id="certifications">
-        <h2 class="section-title">Certifications</h2>
-        <div class="cert-grid">
-            <div class="cert-card">
-                <img src="./images/NIIT-CERTIFICATE.jpeg" alt="Certificate">
-                <div class="cert-info">
-                    <h3>Certified Full Stack Software Engineer.</h3>
-                    <p>National Institute of Information Technology ( NIIT ) - 2023</p>
-                </div>
+<!-- Education Section -->
+<section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2025 - 2026</div>
+            <div class="timeline-content">
+                <h3>Software Engineering</h3>
+                <h4>SCALAR </h4>
+                <p>Graduated with Honors in Software Engineering, specializing in Web Technologies, with hands-on
+                    expertise in DSA, SQL, LLD, HLD, and scalable System Design.</p>
             </div>
-
-            <div class="cert-card">
-                <img src="./images/Scalar.png" alt="Certificate">
-                <div class="cert-info">
-                    <h3>Certification in Data Structures & Algorithms</h3>
-                    <p>SCALER - 2026</p>
-                </div>
-            </div>
-
-            <div class="cert-card">
-                <img src="./images/Sql-certification.png" alt="Certificate">
-                <div class="cert-info">
-                    <h3>Certification in SQL. </h3>
-                    <p>SCALER - 2023</p>
-                </div>
-            </div>
-
-            <div class="cert-card">
-                <img src="./images/java-certificate.png" alt="Certificate">
-                <div class="cert-info">
-                    <h3>Certification in Java </h3>
-                    <p>Hackerrank - 2026</p>
-                </div>
-            </div>
-
-            <div class="cert-card">
-                <img src="./images/scalartop.jpg" alt="Certificate">
-                <div class="cert-info">
-                    <h3>Certification in SD </h3>
-                    <p>SCALER - 2025</p>
-                </div>
-            </div>
-            <div class="cert-card">
-                <img src="./images/java-certificate.png" alt="Certificate">
-                <div class="cert-info">
-                    <h3>Certification in SQL </h3>
-                    <p>Hackerrank - 2026</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>krishna.mugala9@gmail.com</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>8143399550</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>India,Telangana</span>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/Krishna-Mk09"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/krishna-mugala-4b62541b1/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/krishna_mk09/"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <form class="contact-form" id="contactForm">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Vamshi Krishna Mugala. All rights reserved.</p>
-    </footer>
-
-    <!-- Image Popup Modal -->
-    <div id="image-popup" class="popup-overlay">
-        <div class="popup-content">
-            <span class="close-popup">&times;</span>
-            <button class="popup-prev">&lt;</button>
-            <div class="popup-image-container">
-                <img id="popup-img" src="" alt="Architecture Image">
-            </div>
-            <button class="popup-next">&gt;</button>
         </div>
     </div>
 
-    <script src="js/script.js"></script>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022 - 2023</div>
+            <div class="timeline-content">
+                <h3>PGP Full Stack Software Engineering</h3>
+                <h4>University of National Institute of Information Technology - NIIT</h4>
+                <p>Graduated with Honors. Specialized in Software Engineering and Web Technologies.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2016 - 2020</div>
+            <div class="timeline-content">
+                <h3>Bachelor of Technology </h3>
+                <h4>Jyothismathi institute of Technology & Science - JNTUH</h4>
+                <p>Specialized in Electrical and Electronics Engineering.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <h2 class="section-title">My Services</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <i class="fas fa-code service-icon"></i>
+            <h3>Web Development</h3>
+            <p>Building fast, responsive, scalable and secure web applications using modern technologies.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-paint-brush service-icon"></i>
+            <h3>UI/UX Design</h3>
+            <p>Designing intuitive and visually appealing user interfaces.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications">
+    <h2 class="section-title">Certifications</h2>
+    <div class="cert-grid">
+        <div class="cert-card">
+            <img src="./images/NIIT-CERTIFICATE.jpeg" alt="Certificate">
+            <div class="cert-info">
+                <h3>Certified Full Stack Software Engineer.</h3>
+                <p>National Institute of Information Technology ( NIIT ) - 2023</p>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <img src="./images/Scalar.png" alt="Certificate">
+            <div class="cert-info">
+                <h3>Certification in Data Structures & Algorithms</h3>
+                <p>SCALER - 2026</p>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <img src="./images/Sql-certification.png" alt="Certificate">
+            <div class="cert-info">
+                <h3>Certification in SQL. </h3>
+                <p>SCALER - 2023</p>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <img src="./images/java-certificate.png" alt="Certificate">
+            <div class="cert-info">
+                <h3>Certification in Java </h3>
+                <p>Hackerrank - 2026</p>
+            </div>
+        </div>
+
+        <div class="cert-card">
+            <img src="./images/scalartop.jpg" alt="Certificate">
+            <div class="cert-info">
+                <h3>Certification in SD </h3>
+                <p>SCALER - 2025</p>
+            </div>
+        </div>
+        <div class="cert-card">
+            <img src="./images/java-certificate.png" alt="Certificate">
+            <div class="cert-info">
+                <h3>Certification in SQL </h3>
+                <p>Hackerrank - 2026</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>krishna.mugala9@gmail.com</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>8143399550</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>India,Telangana</span>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/Krishna-Mk09"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/krishna-mugala-4b62541b1/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/krishna_mk09/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Vamshi Krishna Mugala. All rights reserved.</p>
+</footer>
+
+<!-- Image Popup Modal -->
+<div id="image-popup" class="popup-overlay">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <button class="popup-prev">&lt;</button>
+        <div class="popup-image-container">
+            <img id="popup-img" src="" alt="Architecture Image">
+        </div>
+        <button class="popup-next">&gt;</button>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
 </body>
 
 </html>
